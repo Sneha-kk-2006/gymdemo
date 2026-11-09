@@ -1,0 +1,683 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>FIT FAB | Family Fitness Studio</title>
+  <link rel="icon" type="image/jpeg" href="images/logo.jpg">
+  
+  <!-- Google Fonts (Oswald & Poppins) -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@400;500;600;700&family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+  
+  <!-- FontAwesome Icons -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+  
+  <!-- Custom CSS -->
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+  <!-- ==================== HEADER & NAVBAR ==================== -->
+  <header class="navbar">
+    <div class="container nav-container">
+      <a href="#hero" class="brand-logo">
+        <img src="images/logo.jpg" alt="FIT FAB Logo" class="brand-logo-img">
+        <div class="brand-text">
+          <span class="brand-main">FIT <span class="text-yellow">FAB</span></span>
+          <span class="brand-tagline">Family Fitness Studio</span>
+        </div>
+      </a>
+
+      <nav>
+        <ul class="nav-links" id="navLinks">
+          <li><a href="#hero" class="active">Home</a></li>
+          <li><a href="#gym-details">About</a></li>
+          <li><a href="#workouts">Workouts</a></li>
+          <li><a href="#trainers">Trainers</a></li>
+          <li><a href="#enquiry">Enquiry</a></li>
+        </ul>
+      </nav>
+
+      <div class="nav-cta-group">
+        <a href="#enquiry" class="btn btn-primary btn-sm">Join Now</a>
+        <button class="mobile-toggle" id="mobileToggle" aria-label="Toggle Navigation">
+          <i class="fa-solid fa-bars"></i>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <!-- ==================== HERO SECTION (HIGH RESOLUTION VIDEO) ==================== -->
+  <section class="hero-section" id="hero">
+    <!-- Background Video in pure clarity -->
+    <div class="hero-video-wrapper">
+      <video id="heroBgVideo" class="hero-video-bg" autoplay loop muted playsinline preload="auto">
+        <source src="videos/gymvideo.mp4" type="video/mp4">
+      </video>
+      <div class="hero-video-overlay"></div>
+    </div>
+
+    <!-- Audio Control Button -->
+    <button id="soundToggleBtn" class="video-audio-ctrl" title="Click to toggle video sound">
+      <i class="fa-solid fa-volume-xmark"></i> Sound Off
+    </button>
+
+    <div class="container">
+      <div class="hero-content">
+        <div class="hero-badge">
+          <span class="pulse-dot"></span>
+          <span>Elite Iron Arena</span>
+        </div>
+
+        <h1 class="hero-title">
+          UNLEASH YOUR <span class="highlight">STRENGTH</span>
+        </h1>
+
+        <p class="hero-desc">
+          High-performance training facility with Olympic lifting platforms, championship coaches, and proven workout programs.
+        </p>
+
+        <div class="hero-cta-group">
+          <a href="#enquiry" class="btn btn-primary">
+            <i class="fa-solid fa-bolt"></i> Claim Free Pass
+          </a>
+          <a href="#workouts" class="btn btn-outline">
+            <i class="fa-solid fa-dumbbell"></i> View Workouts
+          </a>
+        </div>
+
+        <!-- Hero Stats Strip -->
+        <div class="hero-features-bar">
+          <div class="hero-stat-item">
+            <div class="hero-stat-icon">
+              <i class="fa-solid fa-warehouse"></i>
+            </div>
+            <div class="hero-stat-text">
+              <h4>15,000</h4>
+              <p>Sq Ft Space</p>
+            </div>
+          </div>
+
+          <div class="hero-stat-item">
+            <div class="hero-stat-icon">
+              <i class="fa-solid fa-user-ninja"></i>
+            </div>
+            <div class="hero-stat-text">
+              <h4>15+</h4>
+              <p>Top Coaches</p>
+            </div>
+          </div>
+
+          <div class="hero-stat-item">
+            <div class="hero-stat-icon">
+              <i class="fa-solid fa-users"></i>
+            </div>
+            <div class="hero-stat-text">
+              <h4>1,200+</h4>
+              <p>Members</p>
+            </div>
+          </div>
+
+          <div class="hero-stat-item">
+            <div class="hero-stat-icon">
+              <i class="fa-solid fa-clock"></i>
+            </div>
+            <div class="hero-stat-text">
+              <h4>24 / 7</h4>
+              <p>VIP Access</p>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ==================== GYM DETAILS SECTION ==================== -->
+  <section class="gym-details-section" id="gym-details">
+    <div class="container">
+      <div class="details-grid">
+        <!-- Content -->
+        <div class="details-content">
+          <span class="section-tag">
+            <i class="fa-solid fa-shield-halved"></i> The Facility
+          </span>
+          <h2 class="section-title">
+            BUILT FOR <span class="text-yellow">PEAK RESULTS</span>
+          </h2>
+          <p class="details-lead">
+            Every square foot is engineered for serious athletes and dedicated fitness beginners looking to build strength, power, and muscle.
+          </p>
+
+          <!-- Simple Amenities Grid -->
+          <div class="amenities-grid">
+            <div class="amenity-card">
+              <i class="fa-solid fa-weight-hanging amenity-icon"></i>
+              <div class="amenity-info">
+                <h4>Olympic Powerlifting</h4>
+                <p>Eleiko bars, calibrated steel plates & 8 dedicated platforms.</p>
+              </div>
+            </div>
+
+            <div class="amenity-card">
+              <i class="fa-solid fa-hot-tub-person amenity-icon"></i>
+              <div class="amenity-info">
+                <h4>Sauna & Cold Plunge</h4>
+                <p>Speed up recovery and relieve muscle soreness.</p>
+              </div>
+            </div>
+
+            <div class="amenity-card">
+              <i class="fa-solid fa-heart-pulse amenity-icon"></i>
+              <div class="amenity-info">
+                <h4>Cardio & HIIT Zone</h4>
+                <p>Assault air bikes, Concept2 rowers & SkiErgs.</p>
+              </div>
+            </div>
+
+            <div class="amenity-card">
+              <i class="fa-solid fa-martini-glass-citrus amenity-icon"></i>
+              <div class="amenity-info">
+                <h4>Shake & Fuel Bar</h4>
+                <p>Fresh whey isolates, pre-workout & healthy snacks.</p>
+              </div>
+            </div>
+          </div>
+
+          <a href="#enquiry" class="btn btn-yellow-outline btn-sm">
+            <i class="fa-solid fa-calendar-check"></i> Book Facility Tour
+          </a>
+        </div>
+
+        <!-- Visuals & Hours -->
+        <div class="details-visual">
+          <div class="visual-main-box">
+            <img src="https://images.unsplash.com/photo-1534438327276-14e5300c3a48?auto=format&fit=crop&w=800&q=80" alt="Iron Pulse Gym Interior">
+          </div>
+
+          <!-- Working Hours Card -->
+          <div class="hours-card">
+            <h4><i class="fa-regular fa-clock"></i> Operating Hours</h4>
+            <ul class="hours-list">
+              <li>
+                <span>Monday – Friday:</span>
+                <strong>05:00 AM – 11:30 PM</strong>
+              </li>
+              <li>
+                <span>Saturday – Sunday:</span>
+                <strong>06:00 AM – 10:00 PM</strong>
+              </li>
+              <li>
+                <span>VIP Keycard Holders:</span>
+                <strong class="text-yellow">24 Hours Open</strong>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ==================== WORKOUTS & TRAINING DETAILS ==================== -->
+  <section class="workouts-section" id="workouts">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-tag">
+          <i class="fa-solid fa-fire"></i> Training Programs
+        </span>
+        <h2 class="section-title">
+          SIGNATURE <span class="text-yellow">WORKOUTS</span>
+        </h2>
+        <p class="section-subtitle">
+          Structured splits designed for progressive overload and measurable physical progress.
+        </p>
+      </div>
+
+      <!-- Workout Filter Bar -->
+      <div class="workout-filter-bar">
+        <button class="filter-btn active" data-filter="all">All</button>
+        <button class="filter-btn" data-filter="strength">Strength</button>
+        <button class="filter-btn" data-filter="hypertrophy">Bodybuilding</button>
+        <button class="filter-btn" data-filter="hiit">HIIT</button>
+        <button class="filter-btn" data-filter="functional">Functional</button>
+      </div>
+
+      <!-- Workouts Grid -->
+      <div class="workouts-grid">
+        
+        <!-- Workout 1: Strength -->
+        <div class="workout-card" data-category="strength">
+          <div class="workout-img-box">
+            <img src="https://images.unsplash.com/photo-1517838277536-f5f99be501cd?auto=format&fit=crop&w=600&q=80" alt="Strength Training">
+            <span class="workout-level-badge">Advanced</span>
+            <span class="workout-category-tag">Strength</span>
+          </div>
+          <div class="workout-body">
+            <h3 class="workout-title">Titan Strength</h3>
+            <p class="workout-desc">Heavy compound lifts (Squat, Bench, Deadlift) focused on maximum power and raw force.</p>
+            <div class="workout-meta">
+              <span><i class="fa-solid fa-clock"></i> 75 Mins</span>
+              <span><i class="fa-solid fa-calendar"></i> 4-5 Days/Wk</span>
+              <span><i class="fa-solid fa-bolt"></i> High</span>
+            </div>
+            <div class="workout-footer">
+              <div class="workout-trainer-thumb">
+                <img src="https://images.unsplash.com/photo-1567013127542-490d757e51fc?auto=format&fit=crop&w=100&q=80" alt="Marcus Vance">
+                <span>Marcus Vance</span>
+              </div>
+              <button class="btn btn-yellow-outline btn-sm btn-view-workout" data-program="strength">
+                Routine <i class="fa-solid fa-arrow-right"></i>
+              </button>
+            </div>
+          </div>
+        </div>
+
+        <!-- Workout 2: Hypertrophy -->
+        <div class="workout-card" data-category="hypertrophy">
+          <div class="workout-img-box">
+            <img src="https://images.unsplash.com/photo-1581009146145-b5ef050c2e1e?auto=format&fit=crop&w=600&q=80" alt="Mass Hypertrophy">
+            <span class="workout-level-badge">All Levels</span>
+            <span class="workout-category-tag">Hypertrophy</span>
+          </div>
+          <div class="workout-body">
+            <h3 class="workout-title">Mass Hypertrophy</h3>
+            <p class="workout-desc">Targeted volume splits to stimulate muscle growth, symmetry, and definition.</p>
+            <div class="workout-meta">
+              <span><i class="fa-solid fa-clock"></i> 60 Mins</span>
+              <span><i class="fa-solid fa-calendar"></i> 5 Days/Wk</span>
+              <span><i class="fa-solid fa-bolt"></i> Moderate-High</span>
+            </div>
+            <div class="workout-footer">
+              <div class="workout-trainer-thumb">
+                <img src="https://images.unsplash.com/photo-1534528741775-53994a69daeb?auto=format&fit=crop&w=100&q=80" alt="David Sterling">
+                <span>David Sterling</span>
+              </div>
+              <button class="btn btn-yellow-outline btn-sm btn-view-workout" data-program="hypertrophy">
+                Routine <i class="fa-solid fa-arrow-right"></i>
+              </button>
+            </div>
+          </div>
+        </div>
+
+        <!-- Workout 3: HIIT -->
+        <div class="workout-card" data-category="hiit">
+          <div class="workout-img-box">
+            <img src="https://images.unsplash.com/photo-1517836357463-d25dfeac3438?auto=format&fit=crop&w=600&q=80" alt="Metabolic HIIT">
+            <span class="workout-level-badge">Intense</span>
+            <span class="workout-category-tag">HIIT</span>
+          </div>
+          <div class="workout-body">
+            <h3 class="workout-title">Metabolic Shred</h3>
+            <p class="workout-desc">Fast-paced interval circuits with kettlebells, sled pushes, and cardio sprints for fat loss.</p>
+            <div class="workout-meta">
+              <span><i class="fa-solid fa-clock"></i> 45 Mins</span>
+              <span><i class="fa-solid fa-calendar"></i> 3-4 Days/Wk</span>
+              <span><i class="fa-solid fa-bolt"></i> Max Effort</span>
+            </div>
+            <div class="workout-footer">
+              <div class="workout-trainer-thumb">
+                <img src="https://images.unsplash.com/photo-1573496359142-b8d87734a5a2?auto=format&fit=crop&w=100&q=80" alt="Elena Rostova">
+                <span>Elena Rostova</span>
+              </div>
+              <button class="btn btn-yellow-outline btn-sm btn-view-workout" data-program="hiit">
+                Routine <i class="fa-solid fa-arrow-right"></i>
+              </button>
+            </div>
+          </div>
+        </div>
+
+        <!-- Workout 4: Functional -->
+        <div class="workout-card" data-category="functional">
+          <div class="workout-img-box">
+            <img src="https://images.unsplash.com/photo-1599058917212-d750089bc07e?auto=format&fit=crop&w=600&q=80" alt="Functional Calisthenics">
+            <span class="workout-level-badge">Intermediate</span>
+            <span class="workout-category-tag">Functional</span>
+          </div>
+          <div class="workout-body">
+            <h3 class="workout-title">Calisthenics & Core</h3>
+            <p class="workout-desc">Bodyweight strength, pull-ups, ring dips, and core agility for athletic movement.</p>
+            <div class="workout-meta">
+              <span><i class="fa-solid fa-clock"></i> 50 Mins</span>
+              <span><i class="fa-solid fa-calendar"></i> 4 Days/Wk</span>
+              <span><i class="fa-solid fa-bolt"></i> Moderate</span>
+            </div>
+            <div class="workout-footer">
+              <div class="workout-trainer-thumb">
+                <img src="https://images.unsplash.com/photo-1544005313-94ddf0286df2?auto=format&fit=crop&w=100&q=80" alt="Sarah Jenkins">
+                <span>Sarah Jenkins</span>
+              </div>
+              <button class="btn btn-yellow-outline btn-sm btn-view-workout" data-program="functional">
+                Routine <i class="fa-solid fa-arrow-right"></i>
+              </button>
+            </div>
+          </div>
+        </div>
+
+        <!-- Workout 5: Combat -->
+        <div class="workout-card" data-category="hiit">
+          <div class="workout-img-box">
+            <img src="https://images.unsplash.com/photo-1549719386-74dfcbf7dbed?auto=format&fit=crop&w=600&q=80" alt="Combat Boxing">
+            <span class="workout-level-badge">High Energy</span>
+            <span class="workout-category-tag">Combat</span>
+          </div>
+          <div class="workout-body">
+            <h3 class="workout-title">Combat Boxing</h3>
+            <p class="workout-desc">Heavy bag combinations, pad work, and agility footwork for cardio conditioning.</p>
+            <div class="workout-meta">
+              <span><i class="fa-solid fa-clock"></i> 60 Mins</span>
+              <span><i class="fa-solid fa-calendar"></i> 3 Days/Wk</span>
+              <span><i class="fa-solid fa-bolt"></i> High</span>
+            </div>
+            <div class="workout-footer">
+              <div class="workout-trainer-thumb">
+                <img src="https://images.unsplash.com/photo-1567013127542-490d757e51fc?auto=format&fit=crop&w=100&q=80" alt="Marcus Vance">
+                <span>Marcus Vance</span>
+              </div>
+              <button class="btn btn-yellow-outline btn-sm btn-view-workout" data-program="combat">
+                Routine <i class="fa-solid fa-arrow-right"></i>
+              </button>
+            </div>
+          </div>
+        </div>
+
+        <!-- Workout 6: Mobility -->
+        <div class="workout-card" data-category="functional">
+          <div class="workout-img-box">
+            <img src="https://images.unsplash.com/photo-1518611012118-696072aa579a?auto=format&fit=crop&w=600&q=80" alt="Mobility and Rehab">
+            <span class="workout-level-badge">Recovery</span>
+            <span class="workout-category-tag">Mobility</span>
+          </div>
+          <div class="workout-body">
+            <h3 class="workout-title">Mobility & Posture</h3>
+            <p class="workout-desc">Deep joint decompression, hip opening, and spine flexibility to prevent injuries.</p>
+            <div class="workout-meta">
+              <span><i class="fa-solid fa-clock"></i> 45 Mins</span>
+              <span><i class="fa-solid fa-calendar"></i> 2-3 Days/Wk</span>
+              <span><i class="fa-solid fa-bolt"></i> Gentle</span>
+            </div>
+            <div class="workout-footer">
+              <div class="workout-trainer-thumb">
+                <img src="https://images.unsplash.com/photo-1544005313-94ddf0286df2?auto=format&fit=crop&w=100&q=80" alt="Sarah Jenkins">
+                <span>Sarah Jenkins</span>
+              </div>
+              <button class="btn btn-yellow-outline btn-sm btn-view-workout" data-program="mobility">
+                Routine <i class="fa-solid fa-arrow-right"></i>
+              </button>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ==================== TRAINERS & DETAILS ==================== -->
+  <section class="trainers-section" id="trainers">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-tag">
+          <i class="fa-solid fa-trophy"></i> Elite Staff
+        </span>
+        <h2 class="section-title">
+          OUR <span class="text-yellow">TRAINERS</span>
+        </h2>
+        <p class="section-subtitle">
+          Dedicated certified coaches focused on your individual progress.
+        </p>
+      </div>
+
+      <div class="trainers-grid">
+        <!-- Trainer 1 -->
+        <div class="trainer-card">
+          <div class="trainer-photo-wrap">
+            <img src="https://images.unsplash.com/photo-1567013127542-490d757e51fc?auto=format&fit=crop&w=600&q=80" alt="Marcus Vance">
+            <span class="trainer-exp-badge">12+ Yrs Exp</span>
+          </div>
+          <div class="trainer-info">
+            <span class="trainer-role">Strength & Power</span>
+            <h3 class="trainer-name">Marcus Vance</h3>
+            <div class="trainer-specs">
+              <span class="spec-chip">CSCS</span>
+              <span class="spec-chip">Powerlifting</span>
+              <span class="spec-chip">1RM Prep</span>
+            </div>
+            <button class="btn-book-trainer" data-trainer="Marcus Vance">
+              Book Session
+            </button>
+          </div>
+        </div>
+
+        <!-- Trainer 2 -->
+        <div class="trainer-card">
+          <div class="trainer-photo-wrap">
+            <img src="https://images.unsplash.com/photo-1534528741775-53994a69daeb?auto=format&fit=crop&w=600&q=80" alt="David Sterling">
+            <span class="trainer-exp-badge">9+ Yrs Exp</span>
+          </div>
+          <div class="trainer-info">
+            <span class="trainer-role">Hypertrophy & Diet</span>
+            <h3 class="trainer-name">David Sterling</h3>
+            <div class="trainer-specs">
+              <span class="spec-chip">NASM</span>
+              <span class="spec-chip">Body Recomp</span>
+              <span class="spec-chip">Nutrition</span>
+            </div>
+            <button class="btn-book-trainer" data-trainer="David Sterling">
+              Book Session
+            </button>
+          </div>
+        </div>
+
+        <!-- Trainer 3 -->
+        <div class="trainer-card">
+          <div class="trainer-photo-wrap">
+            <img src="https://images.unsplash.com/photo-1573496359142-b8d87734a5a2?auto=format&fit=crop&w=600&q=80" alt="Elena Rostova">
+            <span class="trainer-exp-badge">7+ Yrs Exp</span>
+          </div>
+          <div class="trainer-info">
+            <span class="trainer-role">HIIT & Conditioning</span>
+            <h3 class="trainer-name">Elena Rostova</h3>
+            <div class="trainer-specs">
+              <span class="spec-chip">ACE</span>
+              <span class="spec-chip">HIIT Circuits</span>
+              <span class="spec-chip">Fat Loss</span>
+            </div>
+            <button class="btn-book-trainer" data-trainer="Elena Rostova">
+              Book Session
+            </button>
+          </div>
+        </div>
+
+        <!-- Trainer 4 -->
+        <div class="trainer-card">
+          <div class="trainer-photo-wrap">
+            <img src="https://images.unsplash.com/photo-1544005313-94ddf0286df2?auto=format&fit=crop&w=600&q=80" alt="Sarah Jenkins">
+            <span class="trainer-exp-badge">8+ Yrs Exp</span>
+          </div>
+          <div class="trainer-info">
+            <span class="trainer-role">Mobility & Rehab</span>
+            <h3 class="trainer-name">Sarah Jenkins</h3>
+            <div class="trainer-specs">
+              <span class="spec-chip">DPT Therapy</span>
+              <span class="spec-chip">Spine Alignment</span>
+              <span class="spec-chip">Calisthenics</span>
+            </div>
+            <button class="btn-book-trainer" data-trainer="Sarah Jenkins">
+              Book Session
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ==================== ENQUIRY & CONTACT FORM SECTION ==================== -->
+  <section class="enquiry-section" id="enquiry">
+    <div class="container">
+      <div class="enquiry-wrapper">
+        <!-- Left Contact Info -->
+        <div class="enquiry-left">
+          <div>
+            <span class="section-tag"><i class="fa-solid fa-paper-plane"></i> Contact</span>
+            <div class="enquiry-intro">
+              <h3>JOIN <span class="text-yellow">TODAY</span></h3>
+              <p>Book your free facility pass and train with our coaches.</p>
+            </div>
+
+            <ul class="contact-quick-list">
+              <li class="contact-quick-item">
+                <div class="contact-quick-icon">
+                  <i class="fa-solid fa-location-dot"></i>
+                </div>
+                <div class="contact-quick-info">
+                  <h5>Location</h5>
+                  <p>450 Ironworks Blvd, Downtown</p>
+                </div>
+              </li>
+
+              <li class="contact-quick-item">
+                <div class="contact-quick-icon">
+                  <i class="fa-solid fa-phone"></i>
+                </div>
+                <div class="contact-quick-info">
+                  <h5>Phone</h5>
+                  <p>+1 (800) 476-6785</p>
+                </div>
+              </li>
+
+              <li class="contact-quick-item">
+                <div class="contact-quick-icon">
+                  <i class="fa-solid fa-envelope"></i>
+                </div>
+                <div class="contact-quick-info">
+                  <h5>Email</h5>
+                  <p>contact@fitfabstudio.com</p>
+                </div>
+              </li>
+            </ul>
+          </div>
+        </div>
+
+        <!-- Right Form Column -->
+        <div class="enquiry-form-box">
+          <form id="enquiryForm">
+            <div class="form-row">
+              <div class="form-group">
+                <label for="enquiryName">Full Name *</label>
+                <input type="text" id="enquiryName" class="form-input" placeholder="Your name" required>
+              </div>
+
+              <div class="form-group">
+                <label for="enquiryEmail">Email Address *</label>
+                <input type="email" id="enquiryEmail" class="form-input" placeholder="your@email.com" required>
+              </div>
+            </div>
+
+            <div class="form-row">
+              <div class="form-group">
+                <label for="enquiryPhone">Phone Number *</label>
+                <input type="tel" id="enquiryPhone" class="form-input" placeholder="+1 (555) 000-0000" required>
+              </div>
+
+              <div class="form-group">
+                <label for="enquiryPlan">Goal / Workout</label>
+                <select id="enquiryPlan" class="form-select">
+                  <option value="strength">Titan Strength</option>
+                  <option value="hypertrophy">Mass Hypertrophy</option>
+                  <option value="hiit">Metabolic Shred</option>
+                  <option value="functional">Calisthenics & Core</option>
+                  <option value="combat">Combat Boxing</option>
+                  <option value="mobility">Mobility & Posture</option>
+                </select>
+              </div>
+            </div>
+
+            <div class="form-row">
+              <div class="form-group">
+                <label for="enquiryTrainer">Preferred Trainer</label>
+                <select id="enquiryTrainer" class="form-select">
+                  <option value="Any Available">Any Coach</option>
+                  <option value="Marcus Vance">Marcus Vance</option>
+                  <option value="David Sterling">David Sterling</option>
+                  <option value="Elena Rostova">Elena Rostova</option>
+                  <option value="Sarah Jenkins">Sarah Jenkins</option>
+                </select>
+              </div>
+
+              <div class="form-group">
+                <label for="enquirySlot">Visit Time</label>
+                <select id="enquirySlot" class="form-select">
+                  <option value="morning">Morning (06:00 AM – 10:00 AM)</option>
+                  <option value="afternoon">Afternoon (12:00 PM – 04:00 PM)</option>
+                  <option value="evening" selected>Evening (05:00 PM – 09:00 PM)</option>
+                  <option value="night">Night (09:00 PM – 11:30 PM)</option>
+                </select>
+              </div>
+            </div>
+
+            <button type="submit" class="btn btn-primary form-submit-btn">
+              <i class="fa-solid fa-paper-plane"></i> Send Enquiry
+            </button>
+          </form>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ==================== SIMPLE FOOTER ==================== -->
+  <footer class="footer">
+    <div class="container footer-content">
+      <a href="#hero" class="brand-logo" style="text-decoration: none;">
+        <img src="images/logo.jpg" alt="FIT FAB Logo" class="brand-logo-img" style="width: 38px; height: 38px;">
+        <div class="brand-text">
+          <span class="brand-main" style="font-size: 1.15rem;">FIT <span class="text-yellow">FAB</span></span>
+          <span class="brand-tagline" style="font-size: 0.55rem;">Family Fitness Studio</span>
+        </div>
+      </a>
+      <p class="footer-copy">&copy; 2026 FIT FAB FAMILY FITNESS STUDIO. All Rights Reserved.</p>
+    </div>
+  </footer>
+
+  <!-- ==================== WORKOUT DETAILS MODAL ==================== -->
+  <div class="workout-modal" id="workoutModal">
+    <div class="modal-content-card">
+      <button class="modal-close-btn" id="modalCloseBtn" aria-label="Close modal">
+        <i class="fa-solid fa-xmark"></i>
+      </button>
+
+      <div class="modal-body">
+        <span id="modalCategory" class="section-tag" style="margin-bottom: 6px;">Category</span>
+        <h3 id="modalTitle" style="font-family: var(--font-heading); font-size: 1.6rem; text-transform: uppercase; margin-bottom: 6px; color: var(--text-white);">Program Title</h3>
+        
+        <div style="display: flex; gap: 14px; flex-wrap: wrap; margin-bottom: 18px; font-size: 0.85rem; color: var(--primary-yellow);">
+          <span id="modalCoach"><i class="fa-solid fa-user-ninja"></i> Coach</span>
+          <span id="modalDuration"><i class="fa-solid fa-clock"></i> Duration</span>
+          <span id="modalIntensity"><i class="fa-solid fa-gauge"></i> Intensity</span>
+        </div>
+
+        <h4 style="font-family: var(--font-heading); text-transform: uppercase; margin-bottom: 10px; color: #FFFFFF; font-size: 0.95rem;">
+          Routine Split
+        </h4>
+        <ul id="modalSplitList" style="list-style: none; margin-bottom: 16px;">
+          <!-- Dynamically inserted by JS -->
+        </ul>
+
+        <h4 style="font-family: var(--font-heading); text-transform: uppercase; margin-bottom: 10px; color: #FFFFFF; font-size: 0.95rem;">
+          Program Features
+        </h4>
+        <ul id="modalIncludesList" style="list-style: none; margin-bottom: 20px;">
+          <!-- Dynamically inserted by JS -->
+        </ul>
+
+        <a href="#enquiry" class="btn btn-primary btn-sm" style="width: 100%;" onclick="document.getElementById('workoutModal').classList.remove('active'); document.body.style.overflow='auto';">
+          Book This Program
+        </a>
+      </div>
+    </div>
+  </div>
+
+  <!-- JavaScript -->
+  <script src="js/main.js"></script>
+</body>
+</html>
